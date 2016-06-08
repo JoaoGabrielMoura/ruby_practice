@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./read.css">
+<title>Basic Rack App</title>
+</head>
+
+<body>
+  <ul>
+    <% @scheduler.interviewers.each do |interviewer| %>
+    <li>
+      <h2> Entrevistas de <%= interviewer.name %> </h2>
+      <ul>
+        <% interviewer.interviews.each do |interview| %>
+          <li>
+            <%= "#{interview.candidate.name} a las: #{interview.time}" %>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+    <% end %>
+  </ul>
+</body>
+
+</html>

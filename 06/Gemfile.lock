@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    github-markup (1.4.0)
+    rack (1.6.4)
+    redcarpet (3.3.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  github-markup
+  rack
+  redcarpet
+
+BUNDLED WITH
+   1.12.4
